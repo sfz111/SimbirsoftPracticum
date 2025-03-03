@@ -40,7 +40,7 @@ pip3 install -r requirements.txt
 4. #### Запуск тестов 
 * Запуск всех тестов без отчета
 ```
-pytest test_form_filling
+pytest
 ```
 
 * Запуск теста **test_form_filling** с генерацией отчета в allure
