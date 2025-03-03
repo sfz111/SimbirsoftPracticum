@@ -38,9 +38,9 @@ class FormPage(BasePage):
         self.scroll_to_element(locator=self.YELLOW_RADIO_BTN)
         self.click(locator=self.YELLOW_RADIO_BTN)
 
-    @allure.step("Выбираем вариант 'yes' в дропдауне 'Do you like automation?'")
-    def select_in_dropdown(self):
-        self.select_by_value(locator=self.DROPDOWN, value='yes')
+    @allure.step("Выбираем вариант в дропдауне 'Do you like automation?'")
+    def select_in_dropdown(self, value: str):
+        self.select_by_value(locator=self.DROPDOWN, value=value)
 
     @allure.step("Заполняем поле Email")
     def input_email(self, email):

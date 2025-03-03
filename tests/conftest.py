@@ -4,6 +4,9 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
+from pages.form_page import FormPage
+
+
 @fixture(scope="function")
 def driver():
     options = Options()
@@ -16,3 +19,6 @@ def driver():
     driver.quit()
 
 
+@fixture(scope="function")
+def form_page(driver):
+    yield FormPage(driver)

@@ -3,6 +3,7 @@
 ### Используемые технологии и инструменты
 1) Python 3.10
 2) Selenium Webdriver + Chrome
+3) Webdriver manager
 3) Cелекторы для поиска элементов: CSS, XPath, ID
 4) Тестовый фреймворк - PyTest
 5) Паттерн проектирования Page Object Model

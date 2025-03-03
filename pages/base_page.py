@@ -20,7 +20,7 @@ class BasePage:
     def elements(self, locator: tuple[str, str]):
         return self.driver.find_elements(*locator)
 
-    def open(self, url):
+    def open(self, url: str):
         with step(f"Открываем страницу '{url}'"):
             self.driver.get(url)
 
